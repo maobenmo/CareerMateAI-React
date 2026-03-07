@@ -11,7 +11,7 @@ const Dialog = ({ children }) => {
     <div className="fixed top-0 left-0 h-dvh w-full flex justify-center items-center bg-black/50">
       <div className="bg-white rounded-md">{children}</div>
     </div>,
-    root,
+    root
   );
 };
 

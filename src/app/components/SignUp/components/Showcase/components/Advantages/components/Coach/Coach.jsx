@@ -1,7 +1,7 @@
-import user1 from "./assets/avatar1.avif";
-import user2 from "./assets/avatar2.avif";
-import user3 from "./assets/avatar3.avif";
-import user4 from "./assets/avatar4.avif";
+import user1 from "./assets/user1.avif";
+import user2 from "./assets/user2.avif";
+import user3 from "./assets/user3.avif";
+import user4 from "./assets/user4.avif";
 import Image from "next/image";
 
 const Coach = () => (

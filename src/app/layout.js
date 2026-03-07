@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "CareerMate AI",
-  description: "CareerMate AI",
+  description: "Your AI Career Practice Partner",
 };
 
 export default function RootLayout({ children }) {
@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <div id="dialog-root" />
       </body>
     </html>
   );

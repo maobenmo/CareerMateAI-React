@@ -1,12 +1,10 @@
 import Image from "next/image";
 import logo from "./assets/logo@2x.png";
 
-const Header = () => {
-    return (
-        <header className="fixed p-8">
-            <Image src={logo} alt="CareerMate AI Logo" width={184} height={24}/>
-        </header>
-    );
-}
+const Header = () => (
+  <div className="fixed p-8 bg-white left-0 right-0">
+    <Image src={logo} alt="CareerMate AI" width={184} height={24} />
+  </div>
+);
 
 export default Header;

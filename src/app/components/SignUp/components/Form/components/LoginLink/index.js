@@ -1,1 +1,1 @@
-export {default} from "./LoginLink";
+export { default } from "./LoginLink";

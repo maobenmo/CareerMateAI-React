@@ -1,1 +1,1 @@
-export {default} from "./SubscribeLink";
+export { default } from "./SubscribeLink";

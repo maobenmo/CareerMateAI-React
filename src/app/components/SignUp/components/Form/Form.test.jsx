@@ -27,4 +27,17 @@ describe("Form", () => {
     expect(screen.getByText("Please enter your email")).toBeInTheDocument();
     expect(screen.getByText("Please enter your password")).toBeInTheDocument();
   });
+
+  test("render error messages for empty fields when only email is filled", async () => {
+    const user = userEvent.setup();
+
+    render(<Form />);
+
+    await user.type(screen.getByRole("textbox", { name: "Email" }), "test@example.com");
+    await user.click(screen.getByRole("button", { name: "Create Account" }));
+
+    expect(screen.getByText("Please enter your full name")).toBeInTheDocument();
+    expect(screen.getByText("Please enter your password")).toBeInTheDocument();
+    expect(screen.queryByText("Please enter your email")).not.toBeInTheDocument();
+  });
 });

@@ -3,6 +3,7 @@ import Field from "./components/Field";
 import LoginLink from "./components/LoginLink";
 
 const Form = () => {
+
   return (
     <form className="px-[125px] my-auto">
       <div className="mb-16">
@@ -17,7 +18,6 @@ const Form = () => {
 
       <div className="mt-10 space-y-6">
           <Button >Create Account</Button>
-          &nbsp;
           <LoginLink />
       </div>
     </form>

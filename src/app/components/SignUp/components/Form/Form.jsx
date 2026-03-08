@@ -78,7 +78,8 @@ const Form = () => {
               }
 
               try {
-                await axios.post("http://localhost:8000/auth/sign-up", {
+                await axios.post("http://localhost:5000/v1/auth/register/", {
+                  fullName,
                   email,
                   password,
                 });
